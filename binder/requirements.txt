@@ -4,3 +4,4 @@ matplotlib
 ipywidgets
 jupyterlab_widgets
 pandas
+widgetsnbextension

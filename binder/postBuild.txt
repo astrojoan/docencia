@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e
+jupyter nbextension enable --py widgetsnbextension --sys-prefix >/dev/null 2>&1 || true
