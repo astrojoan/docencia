@@ -1,0 +1,10 @@
+Resultats del fit (Pràctica 6 — Tub de Kundt: perfil de ressonància)
+
+chi2: 59.56952252284229
+chi2_red: 4.254965894488735
+dof: 14
+
+Paràmetres (valor ± 1σ)
+B: 188516221.742166 +/- 1650250.3066799853
+omega_r: 4215.288369394984 +/- 2.1008468072698436
+beta: 157.6006322136573 +/- 2.036659599814316

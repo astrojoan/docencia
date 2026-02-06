@@ -4,7 +4,7 @@
 Pràctica 7 — Mesura de G: ajust no lineal de P(t) + plots + export
 
 Ús:
-  python ajust_mesuraG.py mesuresG.csv
+  python practicaG.py mesuresG.csv
 
 CSV amb columnes: x, y, sy, sx
   x  : temps (s)
@@ -15,6 +15,29 @@ CSV amb columnes: x, y, sy, sx
 Eixida (automàtica):
 - Guarda figures PNG: fitG_fit.png, fitG_residus.png (dins d'una carpeta d'eixida)
 - Exporta fitxers: resultats_fit.txt/csv, residus.csv, corba_fit.csv, covariancia.csv, zip
+
+____________________________________________________________-
+Qué necessites:
+
+Posa a la mateixa carpeta:
+- ajust_mesuraG.py
+- mesuresG.csv
+
+1) Instal·la Miniconda (busca “Miniconda download”) amb les opcions per defecte.
+
+2) Obri una terminal
+- Windows: “Miniconda Prompt” o “Anaconda Prompt”
+- macOS: Terminal
+- Linux: Terminal
+
+3) Crea un entorn i instal·la el que cal (una sola vegada)
+Per fer açó, copia i pega:
+conda create -n labmec python=3.11 numpy scipy pandas matplotlib -y
+conda activate labmec
+
+Ara, si en la terminal vas a la carpeta on estan els fitxers pots executar el script:
+
+python practicaG.py mesuresG.csv
 """
 
 import argparse
@@ -26,7 +49,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
-
 
 # -------------------------
 # Model del sistema: P(t)
